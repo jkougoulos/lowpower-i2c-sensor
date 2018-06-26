@@ -11,3 +11,7 @@ Currently testing with 1.9v threshold (STM1061N19WX6F)
 On the software side detection occurs using a pin CHANGE interrupt, in order to detect low voltage during the whole operation of the sensor (except sleep mode)
 
 RFM69W for wireless communication, 45mA @ +13dBm. 
+
+Jumper exists on the front side (JP18) for selecting power source for STM1061 (Vcc or PIN). Pin seems to work, next revision probably will not have the jumper.
+
+JP19 enables the watchdog reset functionality of TPL5010. This will be probably removed in future version, since TPL5010 expects an initial pulse to be activated. However, if it is not activated, R2 seems to stay in measuring mode (further testing required), wasting battery capacity.
