@@ -1,0 +1,23 @@
+G04 ---------------------------- Layer name :KeepOutLayer*
+G04 EasyEDA v5.5.15, Tue, 26 Jun 2018 10:07:45 GMT*
+G04 6b00658ecf034e76a6cd097d3bdf46c6*
+G04 Gerber Generator version 0.2*
+G04 Scale: 100 percent, Rotated: No, Reflected: No *
+G04 Dimensions in inches *
+G04 leading zeros omitted , absolute positions ,2 integer and 4 decimal *
+%FSLAX24Y24*%
+%MOIN*%
+G90*
+G70D02*
+
+%ADD10C,0.010000*%
+G54D10*
+G01X0Y15000D02*
+G01X12000Y15000D01*
+G01X12000Y0D01*
+G01X0Y0D01*
+G01X0Y15000D01*
+
+%LPD*%
+M00*
+M02*
