@@ -29,22 +29,6 @@ RH_RF69 driver;
 #define STM1061_OUTPUT 6
 #define LED 9
 
-typedef struct header {
-  uint8_t proto_ver : 4;
-  uint8_t proto_type : 4;
-  uint16_t ssid;
-  uint16_t dsid;
-  uint16_t msgseq;
-  uint8_t qos : 4;
-  uint8_t :4;
-  uint8_t ttl;
-  uint8_t frg : 4;
-  uint8_t tfrg : 4;
-  uint16_t mtu : 11;
-  uint16_t  : 5;
-  uint16_t nexthdr;
-} header;
-
 int myID = 998;
 char data[255];
 byte pos = 0;
