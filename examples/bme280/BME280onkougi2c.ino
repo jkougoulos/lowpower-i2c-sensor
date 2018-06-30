@@ -29,7 +29,7 @@ RH_RF69 driver;
 #define STM1061_OUTPUT 6
 #define LED 9
 
-int myID = 998;
+int myID = 999;
 char data[255];
 byte pos = 0;
 
@@ -64,7 +64,7 @@ void checkRFINIT()
   else
   {
 #ifdef DEBUGSENSOR    
-    Serial.println("Mote Radio init ok!");
+    Serial.println("RFM69W init ok!");
 #endif    
   }
   driver.sleep();
@@ -400,12 +400,7 @@ void loop() {
   
   Cycle++;
 
-  digitalWrite(LED, HIGH);
-  delayMicroseconds(1000);
-  digitalWrite(LED, LOW);
-
-
-//  if( Cycle == 3 )  { while(1) {}; }        // test watchdog reset
+ //  if( Cycle == 3 )  { while(1) {}; }        // test watchdog reset
   
   
   phase = 1;
